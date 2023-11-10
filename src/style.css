@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+:root {
+  --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+  --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+  --Grayish-Blue: hsl(212, 23%, 69%);
+  --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--Light-Grayish-Blue);
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  width: 730px;
+  height: 280px;
+}
+main p {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--Desaturated-Dark-Blue);
+}
+main h1 {
+  color: var(--Very-Dark-Grayish-Blue);
+}
+main h5 {
+  color: var(--Desaturated-Dark-Blue);
+}
+main #img_info {
+  background-image: url(../images/drawers.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 285px;
+  height: 280px;
+}
+main #info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  box-sizing: border-box;
+  width: 420px;
+  height: 280px;
+}
+main #profile {
+  display: flex;
+}
+#profile-all {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+#profile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#profile #img img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+#profile #share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background-color: var(--Light-Grayish-Blue);
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+#profile #boxshare {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0px 30px 0px 30px;
+  border-radius: 10px;
+  align-items: center;
+  margin-left: 200px;
+  margin-top: -120px;
+  background-color: var(--Desaturated-Dark-Blue);
+  height: 50px;
+  width: 250px;
+}
+#profile #boxshare::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 10px;
+  background-color: var(--Desaturated-Dark-Blue);
+  margin-top: 60px;
+  margin-left: 82px;
+  clip-path: polygon(50% 100%, 100% 0%, 0% 0%);
+}
+#profile #boxshare #facebook {
+  width: 20px;
+  height: 20px;
+}
+#profile #boxshare #twitter {
+  width: 20px;
+  height: 20px;
+}
+#profile #boxshare #pinteres {
+  width: 20px;
+  height: 20px;
+}
+
+#profile #boxshare #text-share-box {
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: var(--Grayish-Blue);
+}
+#profile #boxshare.activate{
+  display: none;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
